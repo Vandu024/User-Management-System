@@ -6,3 +6,8 @@ function confirmDelete(id)
         document.getElementById(`${id}`).submit();
     }
 }
+
+function updateUser()
+{
+    alert('Data Updated Successfully');
+}
