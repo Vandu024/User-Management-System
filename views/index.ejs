@@ -48,8 +48,8 @@
                             <a href="/edit/<%= element._id%>" type="button" class="btn btn-warning btn-small">
                                 <i class="bi bi-pencil"></i>
                             </a>
-                            <form action="/edit/<%= element._id %>?_method=DELETE" method="POST" class="position-relative">
-                                <button type="submit" class="btn btn-danger btn-small">
+                            <form id="<%= element._id %>" action='/edit/<%= element._id %>?_method=DELETE'  method="POST" class="position-relative">
+                                <button type="button" onclick="confirmDelete('<%= element._id %>')" class="btn btn-danger btn-small">
                                     <i class="bi bi-trash"></i>
                                 </button>
                             </form>
